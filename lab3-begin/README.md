@@ -36,8 +36,6 @@ Uvođenjem novih DTO klasa javlja se potreba za konverzijom iz DTO u interne ent
 
 ### Parametri REST metoda
 
-Zapravo pretraživanje podataka na osnovu nekog kriterijuma.
-
 
 Po pravilu, svi dodatni parametri koje je neophodno poslati REST servisu, šalju se preko HTTP request parametara. Npr., za zahtev:
 
@@ -70,6 +68,7 @@ Spring omogućava proširenje REST servisa ovakvim request parametrima. Sve što
 
 * Dakle, u našem slučaju metodu getActivities (kontroler `ApiActivitiesController`) proširiti parametrom `String name` i anotirati ga sa `@RequestParam`.
 
+Pored prenošenja parametara kroz URL, dodatni parametri mogu se prosleđivati i kroz zaglavlje zahteva. Tada se mogu preuzimati korišćenjem anotacije `@RequestHeader`.
 
 ----
 
