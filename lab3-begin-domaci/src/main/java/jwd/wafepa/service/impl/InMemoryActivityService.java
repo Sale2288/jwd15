@@ -89,7 +89,7 @@ public class InMemoryActivityService implements ActivityService {
 	}
 
 	@PostConstruct
-	public void БилоШта(){
+	public void setUp(){
 		save(new Activity("Swimming"));
 		save(new Activity("Running"));
 	}
