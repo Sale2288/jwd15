@@ -14,5 +14,7 @@ public interface UserService {
 	//specijalnog razloga) koristi
 	//varijanta brisanja koja NE vraća entitet
 	void delete(Long id); 
+	List<User> findByName(String name);
+	List<User> save(List<User> users);
 	
 }
