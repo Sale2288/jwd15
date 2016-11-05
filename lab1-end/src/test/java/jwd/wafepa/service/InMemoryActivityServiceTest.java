@@ -14,7 +14,7 @@ public class InMemoryActivityServiceTest {
 	private ActivityService activityService = null;
 	
 	@Before
-	public void нијеБитно(){
+	public void setUp(){
 		activityService = new InMemoryActivitySerivce();
 		
 		activityService.save(new Activity("Running"));
