@@ -1,9 +1,25 @@
-package jwd.wafepa.web.dto;
+package sasa_jwd.wafepa.web.dto;
 
 public class ActivityDTO {
+
 	private Long id;
 	private String name;
 	
+	
+	public ActivityDTO() {
+		super();
+	}
+
+	public ActivityDTO(String name) {
+		super();
+		this.name = name;
+	}
+
+	public ActivityDTO(Long id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 	
 	public Long getId() {
 		return id;
@@ -17,6 +33,5 @@ public class ActivityDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
 }

@@ -1,17 +1,24 @@
-package jwd.wafepa.model;
+package sasa_jwd.wafepa.model;
 
-/**
- * Models a physical activity.
- * 
- *
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tblActivity")
 public class Activity {
-	
+	@Id
+	@GeneratedValue
+	@Column(name="id")
 	private Long id;
+	@Column(name="name")
 	private String name;
-	private String adminComment="test";
+	@Column(name="admin_comment")
+	private String adminComment = "This is a secret!";
 	
-
+	
 	public Activity() {
 		super();
 	}
@@ -27,34 +34,15 @@ public class Activity {
 		this.name = name;
 	}
 	
-	/**
-	 * 
-	 * @return Activity identifier.
-	 */
 	public Long getId() {
 		return id;
 	}
-	
-	/**
-	 * Sets activity identifier.
-	 * @param id new identifier
- 	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	/**
-	 * 
-	 * @return Name of the activity.
-	 */
 	public String getName() {
 		return name;
 	}
-	
-	/**
-	 * 
-	 * @param name New name of the activity.
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
