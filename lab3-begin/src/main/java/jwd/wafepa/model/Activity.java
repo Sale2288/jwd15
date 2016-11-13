@@ -9,7 +9,7 @@ public class Activity {
 	
 	private Long id;
 	private String name;
-	private String adminComment = "This is a secret!";
+	
 	
 
 	public Activity() {
@@ -57,14 +57,6 @@ public class Activity {
 	 */
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getAdminComment() {
-		return adminComment;
-	}
-
-	public void setAdminComment(String adminComment) {
-		this.adminComment = adminComment;
 	}
 	
 	
